@@ -17,9 +17,19 @@ For this project we will learn to make HTTP requests from a Python program and u
 
 This project was completed by 2 people. Whose names are listed in the very top of this paper.
 
-
-## 2 Screenshots
-![](q2.png)
-![](q3-1.png)
-![](q3-2.png)
-![](q6.png)
+## 2 Learning HTTP request
+**counter.html**
+When USE_SESSION_STORE = False <br/>
+Flask will use default session implementation: storing the session variables count in a signed cookie on the client side.
+![](q2.png) <br/>
+Notice that the two browsers do not share the same count variable. 
+**Browser developer tools**
+Here are viewing the `Set-Cookies: response header `
+![](q3-1.png) <br/>
+Notice that it changes each time the page is refreshed.
+![](q3-2.png) <br/>
+**counter.html**
+When USE_SESSION_STORE = True <br/>
+Flask will load the counter page.
+![](q6.png) <br/>
+Notice the methods of keyVaueSessionStore have not yet been implemented. 
