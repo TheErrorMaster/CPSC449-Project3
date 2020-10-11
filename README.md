@@ -16,17 +16,17 @@ For this project we will learn to make HTTP requests from a Python program and u
 This project was completed by 2 people. Whose names are listed in the very top of this paper.
 
 ## 2 Learning HTTP request
-#### counter.html
+### counter.html
 When USE_SESSION_STORE = False <br/>
 Flask will use default session implementation: storing the session variables count in a signed cookie on the client side. <br/>
 ![](q2.png) <br/>
 Notice that the two browsers do not share the same count variable.  <br/>
-#### Browser developer tools
+### Browser developer tools
 Here are viewing the `Set-Cookies: response header ` <br/>
 ![](q3-1.png) <br/>
 Notice that it changes each time the page is refreshed. <br/>
 ![](q3-2.png) <br/>
-#### counter.html
+### counter.html
 When USE_SESSION_STORE = True <br/>
 Flask will load the counter page. <br/>
 ![](q6.png) <br/>
