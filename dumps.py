@@ -3,10 +3,11 @@ import requests
 
 
 def dump_jsons(p_url):
-    try:
-        response = requests.get(p_url)
-        for item in response.json():
-            print(item)
+    response = requests.get(p_url)
+        info = response.json()["keys"] # puts keys in a list
+        # prints all keys values here
+        for i in info:
+            print(requests.get(_url(p_url,i)).json())
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
 
