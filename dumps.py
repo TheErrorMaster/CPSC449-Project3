@@ -1,6 +1,8 @@
 import sys
 import requests
 
+def _url(path, key):
+    return "{}{}".format(path,key)
 
 def dump_jsons(p_url):
     response = requests.get(p_url)
