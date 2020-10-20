@@ -42,12 +42,12 @@ class KeyValueSessionStore(SessionStore):
 
 
     def get_key(self, key):
-        response = requests.get(self.url, params={'key': key})
+        response = requests.get(self.url, params={key: 'key'})
         print(response)
 
 
     def delete_key(self, key):
-        response = requests.delete(self.url, params={'key': key})
+        response = requests.delete(self.url, params={key: 'key'})
         print(response)
 
 
