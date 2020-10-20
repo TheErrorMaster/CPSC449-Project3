@@ -31,6 +31,7 @@ class KeyValueSessionStore(SessionStore):
 
     def __init__(self, url, logger=None):
         super().__init__(logger)
+        self.url = url
 
 
     def set_key(self, key, value):
