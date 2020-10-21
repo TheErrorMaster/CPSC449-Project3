@@ -11,6 +11,8 @@ Make sure you are in the project root and run:
 
 1 Background 
 
+Look at the README.md if you want to see our readme in md version. 
+
 For this project we will learn to make HTTP requests from a Python program and use this ability to store server-side session data in a separate service. 
 
 This project was completed by 2 people. Whose names are listed in the very top of this paper.
