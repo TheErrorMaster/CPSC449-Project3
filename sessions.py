@@ -39,18 +39,17 @@ class KeyValueSessionStore(SessionStore):
         response = requests.post(self.url,
                                  json={key: value},
                                  headers=default_headers)
-        print(response.json())
 
 
     def get_key(self, key):
-        response = requests.get(self.url, params={key: key})
-        print(response.json())
+        query_url = self.url + '/' + key
+        response = requests.get(query_url)
+        return response.json()[key]
 
 
     def delete_key(self, key):
-        response = requests.delete(self.url, params={key: key})
-        print(response)
-
+        query_url = self.url + '/' + key
+        response = requests.delete(query_url)
 
 
 class ServerSideSession(CallbackDict, SessionMixin):
